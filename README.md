@@ -1,11 +1,11 @@
-# **Speech Dispatcher**
+# **Spd-say for Alert Sound Notification**
+spd-say sends text-to-speech output request to speech-dispatcher process which handles it and ideally outputs the result to the audio system.
+
+## **Speech Dispatcher**
 
 Speech-dispatcher is a server process that is responsible for  transforming  requests  for text-to-speech  output  into  actual  speech  hearable  in  the  speakers.  It  arbitrates concurrent speech requests based on message priorities,  and  abstracts  different  speech synthesizers.  Client  programs,  like  screen readers or navigation software, send speech requests to speech-dispatcher using TCP protocol (with  the  help  of  client  libraries).
 
 Speech-dispatcher  is  usually started automatically by client libraries (i.e. autospawn), so you only need to run it manually if testing/debugging, or when in other  explicit  need for a special setup.
-
-## **Spd-say**
-spd-say sends text-to-speech output request to speech-dispatcher process which handles it and ideally outputs the result to the audio system.
 
 ### **Use-case**
 
